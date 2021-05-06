@@ -1,0 +1,168 @@
+/* Formatação geral
+-----------------------------*/
+body{
+	padding: 0;
+	margin: 0;
+	background-image: linear-gradient(#000 60%, #f2f2f2);
+	color: #999;
+}
+
+p{
+	font-size: 1.5em;
+}
+
+.logo{
+	width: 60px;
+}
+
+.caixa{
+	border-bottom: 1px solid #1568;
+}
+
+.bg-black{
+	background: #111;
+	color: #999;
+}
+
+.bg-white-progresivo{
+	background-image: linear-gradient(rgba(0, 0, 0, 0),  rgb(36, 36, 36) 90%);
+	color: #111;
+}
+
+.bg-white1{
+	background-color: rgb(36, 36, 36);
+}
+
+/*Links
+-----------------------------*/
+.line-link, .line-link-top{	
+	position: relative;
+	text-decoration: none;
+	cursor: pointer;
+}
+.line-link::after{
+	content: "";
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	width: 100%;
+	height: 0.07em;
+	background-color: rgb(161, 161, 231);
+	transform-origin: left;
+	transform: scaleX(0);
+	transition: transform 550ms; 
+}
+.line-link-top::after{
+	content: "";
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	width: 100%;
+	height: 0.07em;
+	background-color: white;
+	transform-origin: top;
+	transform: scaleX(0);
+	transition: transform 550ms; 
+}
+.line-link:hover::after, .line-link-top:hover::after{
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
+/* Textos
+-----------------------------*/
+.titulo{
+	text-transform: uppercase;
+	text-align: right;
+	font-style: oblique;
+	font-weight: lighter;
+}
+.titulo2{
+	text-transform: uppercase;
+	text-align: right;
+	font-weight: bold;
+}
+
+.titulo-caixa{
+	color: white;
+}
+
+/* Botão
+-----------------------------*/
+.btn-border {
+	text-transform: uppercase;
+	color: white;
+	border-radius: 30px;
+	transition: background 0.7s, color 0.8s;
+}
+.btn-branco{
+	border: 2px solid white;
+}
+.btn-branco:hover{
+	text-decoration: none;
+	color: #111;
+	border: 2px solid white;
+	background-color: #f2f2f2;
+}
+
+/* Formatações topo
+-----------------------------*/
+.margin-8{
+	margin-top: 8em;
+}
+
+.margin-2{
+	margin-top: 2em;
+}
+
+/* Carousel
+-----------------------------*/
+.carousel-caption{
+	position: absolute;
+	left: 600px;
+	width: 380px;
+	height: 380px;
+}
+.carousel-caption p{
+	color: #999; 
+	font-size: 1.2em;
+}
+/* Comentarios
+-----------------------------*/
+.p-citacao{
+	color: white;
+	font-size: 1em;
+}
+
+.bg-black3{
+	border-radius: 12px;
+	background: rgba(37, 36, 36, 0.726);
+	color: #999;
+}
+
+.borda-img{
+	border: 5px solid rgb(255, 255, 255);
+	background-image: linear-gradient(rgba(0, 0, 0, 0), #f2f2f2 90%);
+}
+/* formulario
+-----------------------------*/
+.bg-comentarios{
+	border-radius: 15px 15px 0 0;
+	background: rgba(55, 55, 63, 0.808);
+}
+
+.form-text{
+	font-size: 1.1em;
+	color: white;
+}
+
+.card{
+	padding: 5px;
+	border: none;
+	background: none;
+}
+.card-img{
+	width: 180px;
+	height: 180px;
+	border-radius: 90px;
+}
